@@ -14,11 +14,11 @@ module.exports = function() {
       // Do some basic HTML escaping
       .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
-    // Override the original data
+    // Override the original data  
     hook.data = {
       text,
       // Set the user id
-      userId: user._id,
+      userId: user.id,
       // Add the current time via `getTime`
       createdAt: new Date().getTime()
     };

@@ -16,7 +16,7 @@
     ]
   },
   "authentication": {
-    "secret": "hrP4tO7cyAogJA8y73F9WljFJAK2g2h3b29u3WThHLbKzMoTSwR922r5mg4Psqtg",
+    "secret": "WTTh70tGqGkU0FmkUTSQlzjPU4SFbJCfxLHHjIwZFZv9AOr0AzE8wt7zugUZ7flR",
     "strategies": [
       "jwt",
       "local"
