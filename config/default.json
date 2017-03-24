@@ -6,14 +6,22 @@
     "default": 10,
     "max": 50
   },
+  "rethinkdb": {
+    "db": "server",
+    "servers": [
+      {
+        "host": "localhost",
+        "port": "28015"
+      }
+    ]
+  },
   "authentication": {
-    "secret": "b5KqXTye4fVxhGFpwMVZRO3R56wS5LNoJHifwgGOFkB5GfMWvIdrWyQxEJXswhAC",
+    "secret": "hrP4tO7cyAogJA8y73F9WljFJAK2g2h3b29u3WThHLbKzMoTSwR922r5mg4Psqtg",
     "strategies": [
       "jwt",
       "local"
     ],
     "path": "/authentication",
     "service": "users"
-  },
-  "nedb": "../data"
+  }
 }

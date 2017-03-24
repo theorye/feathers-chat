@@ -1,14 +1,13 @@
 'use strict';
 
 // Initializes the `messages` service on path `/messages`
-const createService = require('feathers-nedb');
-const createModel = require('../../models/messages.model');
+const createService = require('feathers-rethinkdb');
 const hooks = require('./messages.hooks');
 const filters = require('./messages.filters');
 
 module.exports = function() {
   const app = this;
-  const Model = createModel(app);
+  const Model = app.get('rethinkdbClient');
   const paginate = app.get('paginate');
 
   const options = {
@@ -25,7 +24,7 @@ module.exports = function() {
 
   service.hooks(hooks);
 
-  if (service.filter) {
+  if(service.filter) {
     service.filter(filters);
   }
 };

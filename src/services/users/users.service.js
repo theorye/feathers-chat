@@ -1,14 +1,13 @@
 'use strict';
 
 // Initializes the `users` service on path `/users`
-const createService = require('feathers-nedb');
-const createModel = require('../../models/users.model');
+const createService = require('feathers-rethinkdb');
 const hooks = require('./users.hooks');
 const filters = require('./users.filters');
 
 module.exports = function() {
   const app = this;
-  const Model = createModel(app);
+  const Model = app.get('rethinkdbClient');
   const paginate = app.get('paginate');
 
   const options = {
@@ -25,7 +24,7 @@ module.exports = function() {
 
   service.hooks(hooks);
 
-  if (service.filter) {
+  if(service.filter) {
     service.filter(filters);
   }
 };
