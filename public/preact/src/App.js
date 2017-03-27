@@ -64,11 +64,7 @@ class App extends Component {
     } else if(this.state.login) {
       return <Chat messages={this.state.messages} users={this.state.users} />
     }
-    return (
-      <div>
-        <Login />
-      </div>
-    );
+    return <Login />
   }
 }
 

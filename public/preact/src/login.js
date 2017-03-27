@@ -30,7 +30,7 @@ export default class Login extends Component {
 
 
   render() {
-    return (<div className="login container">
+    return (<main className="login container">
       <div className="row">
         <div className="col-12 col-6-tablet push-3-tablet text-center heading">
           <h1 className="font-100">Log in or signup</h1>
@@ -58,6 +58,6 @@ export default class Login extends Component {
           </form>
         </div>
       </div>
-    </div>);
+    </main>);
   }
 }
