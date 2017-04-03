@@ -13,7 +13,7 @@
 }
 
 .login-container-wallpaper {
-  background-image: url('http://localhost:3000/img/mcd-wallpaper.jpg');
+  background-image: url('img/mcd-wallpaper.jpg');
   height: 100%;
   width: 100% !important;
 }
@@ -44,12 +44,12 @@
 .login-icon {
   height: 55px;
   width: 55px;
-  margin: 0px 3px -4px 3px;
+  margin: 0px 4px -4px 4px;
 }
 
 .login-header-card {
   background: #607D8B;
-  margin: -10px -30px 10px -30px;
+  margin: -25px 10px 10px 10px;
   padding: 10px;
   text-align: center;
   color: white;
@@ -58,6 +58,13 @@
 .login-logo {
   height: 90px;
   width: 90px;
+}
+
+.login-title {
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 .button-primary {
@@ -84,6 +91,10 @@
   box-shadow:         0px 0px 7px 0px rgba(33, 150, 243, 0.95);
 }
 
+label {
+  font-size: 0.7em !important;
+}
+
 /* ======================================================================= */
 
 *, *:before, *:after {
@@ -95,7 +106,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 html, button, input, select, textarea {
-  font-family: sans-serif; }
+  font-family: "Roboto", sans-serif !important; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
