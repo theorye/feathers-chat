@@ -53,6 +53,9 @@ export default class Login extends Component {
               <a href="#btn" className="login-icon">
                 <img className="login-icon" src="http://localhost:3030/img/icons/Github.svg" />
               </a>
+              <a href="#btn" className="login-icon">
+                <img className="login-icon" src="http://localhost:3030/img/icons/Linkedin.svg" />
+              </a>
             </div>
           </div>
           <form className="form">

@@ -38,7 +38,7 @@
 }
 
 .border-radius {
-  border-radius: 5px !important;
+  border-radius: 7px !important;
 }
 
 .login-icon {
@@ -76,7 +76,7 @@
 }
 
 .login-field {
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .login-field:hover {
