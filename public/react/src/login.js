@@ -30,32 +30,48 @@ export default class Login extends Component {
 
 
   render() {
-    return <main className="login container">
+    return <main className="login container login-container-wallpaper">
       <div className="row">
         <div className="col-12 col-6-tablet push-3-tablet text-center heading">
-          <h1 className="font-100">Log in or signup</h1>
           <p>{this.state.error && this.state.error.message}</p>
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop">
+        <div className="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop login-container box-shadow border-radius">
+          <div className="login-header-card border-radius box-shadow">
+            <img className="login-logo" src="img/mcdonaldlogo.svg"/><br/>
+            Welcome to Featherchat!
+          </div>
           <form className="form">
             <fieldset>
-              <input className="block" type="email" name="email" placeholder="email" onChange={ev => this.updateField('email', ev)} />
+              <input className="block border-radius box-shadow-light" type="email" name="email" placeholder="email" onChange={ev => this.updateField('email', ev)} />
             </fieldset>
 
             <fieldset>
-              <input className="block" type="password" name="password" placeholder="password" onChange={ev => this.updateField('password', ev)} />
+              <input className="block border-radius box-shadow-light" type="password" name="password" placeholder="password" onChange={ev => this.updateField('password', ev)} />
             </fieldset>
 
-            <button type="button" className="button button-primary block signup" onClick={() => this.login()}>
+            <button type="button" className="button button-primary block signup box-shadow" onClick={() => this.login()}>
               Log in
             </button>
 
-            <button type="button" className="button button-primary block signup" onClick={() => this.signup()}>
+            <button type="button" className="button button-primary block signup box-shadow" onClick={() => this.signup()}>
               Signup
             </button>
           </form>
+          <div className="login-socialmedia-card border-radius box-shadow">            
+            <div class="social-line">
+              <a href="#btn" className="login-icon">
+                <img className="login-icon" src="img/icons/Facebook.svg"/>
+              </a>
+              <a href="#btn" className="login-icon">
+                <img className="login-icon" src="img/icons/Twitter.svg"/>
+              </a>
+              <a href="#btn" className="login-icon">
+                <img className="login-icon" src="img/icons/Google+.svg"/>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </main>;

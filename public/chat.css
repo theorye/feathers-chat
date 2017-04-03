@@ -98,13 +98,13 @@ main.login fieldset {
 
 main.login fieldset input {
   width: 100%;
-  padding: 1.4em 0.7em;
+  padding: 0.7em 0.7em;
 }
 
 main.login .button-primary {
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  margin-top: 40px;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  margin-top: 20px;
   width: 100%;
 }
 
