@@ -8,7 +8,7 @@
 
 .login-container {
   background: #F0F0F0;
-  padding: 0px 45px 0px 45px;
+  padding: 0px 45px 20px 45px;
   margin-top: 5%;
 }
 
@@ -25,13 +25,13 @@
 }
 
 .box-shadow-light {
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.45);
-  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.45);
-  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.45);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.15);
 }
 
 .login-socialmedia-card {
-  background: #F44336;
+  background: #2196F3;
   margin: 20px -30px -10px -30px;
   padding: 10px;
   text-align: center;
@@ -42,14 +42,14 @@
 }
 
 .login-icon {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   margin: 0px 3px -4px 3px;
 }
 
 .login-header-card {
-  background: #F44336;
-  margin: -10px -30px 30px -30px;
+  background: #607D8B;
+  margin: -10px -30px 10px -30px;
   padding: 10px;
   text-align: center;
   color: white;
@@ -58,6 +58,30 @@
 .login-logo {
   height: 90px;
   width: 90px;
+}
+
+.button-primary {
+  background: #00BCD4 !important;
+}
+
+.button-primary:hover {
+  background: #2196F3 !important;
+}
+
+.login-field {
+  transition: 1s;
+}
+
+.login-field:hover {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(33, 150, 243, 0.95);
+  -moz-box-shadow:    0px 0px 7px 0px rgba(33, 150, 243, 0.95);
+  box-shadow:         0px 0px 7px 0px rgba(33, 150, 243, 0.95);
+}
+
+.login-field:focus {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(33, 150, 243, 0.95);
+  -moz-box-shadow:    0px 0px 7px 0px rgba(33, 150, 243, 0.95);
+  box-shadow:         0px 0px 7px 0px rgba(33, 150, 243, 0.95);
 }
 
 /* ======================================================================= */
