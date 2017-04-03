@@ -13,7 +13,8 @@
 }
 
 .login-container-wallpaper {
-  background-image: url('img/mcd-wallpaper.jpg');
+  background-image: url('img/chickwp1.jpg');
+  background-size: cover;
   height: 100%;
   width: 100% !important;
 }
