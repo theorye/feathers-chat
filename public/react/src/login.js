@@ -68,7 +68,7 @@ export default class Login extends Component {
               <input className="block border-radius box-shadow-light login-field" type="password" name="password" placeholder="password" onChange={ev => this.updateField('password', ev)} />
             </fieldset>
 
-            <input type="checkbox" /> <label>Save Password</label>
+            {/*<input type="checkbox" /> <label>Save Password</label>*/}
 
             <button type="button" className="button button-primary block signup box-shadow-light" onClick={() => this.login()}>
               Log in
