@@ -1,28 +1,43 @@
 'use strict';
 
 // Login screen
-const loginHTML = `<main class="login container">
+const loginHTML = `<main class="login container login-container-wallpaper">
   <div class="row">
     <div class="col-12 col-6-tablet push-3-tablet text-center heading">
       <h1 class="font-100">Log in or signup</h1>
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop">
+    <div class="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop login-container box-shadow border-radius">
+      <div class="login-header-card border-radius box-shadow">
+        <div class="login-title">Login</div>
+        <div class="social-line">
+          <a href="http://localhost:3030/auth/facebook">
+            <img class="login-icon" src="http://localhost:3030/img/icons/Facebook.svg" />
+          </a>
+          <a href="http://localhost:3030/auth/google">
+            <img class="login-icon" src="http://localhost:3030/img/icons/Google+.svg" />
+          </a>
+          <a href="http://localhost:3030/auth/github">
+            <img class="login-icon" src="http://localhost:3030/img/icons/Github.svg" />
+          </a>
+        </div>
+      </div>
       <form class="form">
+      <div class="login-title">- Or create an account with us -</div>
         <fieldset>
-          <input class="block" type="email" name="email" placeholder="email">
+          <input class="block border-radius box-shadow-light login-field" type="email" name="email" placeholder="email">
         </fieldset>
 
         <fieldset>
-          <input class="block" type="password" name="password" placeholder="password">
+          <input class="block border-radius box-shadow-light login-field" type="password" name="password" placeholder="password">
         </fieldset>
 
-        <button type="button" id="login" class="button button-primary block signup">
+        <button type="button" id="login" class="button button-primary block signup box-shadow-light">
           Log in
         </button>
 
-        <button type="button" id="signup" class="button button-primary block signup">
+        <button type="button" id="signup" class="button button-primary block signup box-shadow-light">
           Signup
         </button>
       </form>

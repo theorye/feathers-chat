@@ -41,20 +41,14 @@ export default class Login extends Component {
           <div className="login-header-card border-radius box-shadow">
             <div className="login-title">Login</div>
             <div class="social-line">
-              <a href="#btn" className="login-icon">
+              <a href="http://localhost:3030/auth/facebook">
                 <img className="login-icon" src="http://localhost:3030/img/icons/Facebook.svg" />
               </a>
-              <a href="#btn" className="login-icon">
-                <img className="login-icon" src="http://localhost:3030/img/icons/Twitter.svg" />
-              </a>
-              <a href="#btn" className="login-icon">
+              <a href="http://localhost:3030/auth/google">
                 <img className="login-icon" src="http://localhost:3030/img/icons/Google+.svg" />
               </a>
-              <a href="#btn" className="login-icon">
+              <a href="http://localhost:3030/auth/github">
                 <img className="login-icon" src="http://localhost:3030/img/icons/Github.svg" />
-              </a>
-              <a href="#btn" className="login-icon">
-                <img className="login-icon" src="http://localhost:3030/img/icons/Linkedin.svg" />
               </a>
             </div>
           </div>
@@ -78,9 +72,6 @@ export default class Login extends Component {
               Signup
             </button>
           </form>
-          {/*<div className="login-socialmedia-card border-radius box-shadow">            
-            
-          </div>*/}
         </div>
       </div>
     </main>;
